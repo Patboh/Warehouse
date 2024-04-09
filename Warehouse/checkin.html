@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+    <title>Warehouse Check-in</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css-1/style.css">
+  <link rel="stylesheet" href="css-1/responsive.css">
+  </head>
+<body>
+    <nav>
+        <!--nav-bar-->
+            <div class="nav-bar">  
+                <div class="nav-links">
+                    <ul class="links">
+                        <div class="dropdown">
+                            <button class="btn navbar-btn">Log out</button>
+                            <div class="dropdown-content">
+                                <a href="index.html">Yes</a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>  
+        </nav>
+<div class="main-checked-area">
+    <h1>Checked In</h1>
+    <div class="twoside">
+        <div class="left-side">
+            <div class="type-flex-container">
+                <button class="btn-type" onclick="one()">a1</button>
+                <button class="btn-type" onclick="one()">a2</button>
+                <button class="btn-type" onclick="one()">a3</button>
+                <button class="btn-type" onclick="one()">b1</button>
+                <button class="btn-type" onclick="one()">b2</button>
+                <button class="btn-type" onclick="one()">b3</button>
+                <button class="btn-type" onclick="one()">c1</button>
+                <button class="btn-type" onclick="one()">c2</button>
+                <button class="btn-type" onclick="one()">c3</button>
+                
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="form-group">
+                <form name="frm-checkin" method="POST" action="php-checkin.php">
+                    <p></p>
+                    <h2><b>Checked in</b></h2>
+                    <div class="form-checkgroup">
+                        <label for="product_type">Product type</label><br>
+                        <input type="text" name="product_type" id="product_type" class="" placeholder="product type">
+                    </div>
+                    <div class="form-checkgroup">
+                        <label for="product_id">Product id</label><br>
+                        <input type="text" name="product_id" id="product_id" class="" placeholder="product_id">
+                    </div>
+                </form>
+            </div>
+            <p class="btn-ok">
+                <button type="submit" class="btn-checkin">Ok</button>
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="back-btn">
+        <li class="btn back-hover"><a href="Homepage-1.html">Back</a></li>
+    </div>
+</div>
+</body>
