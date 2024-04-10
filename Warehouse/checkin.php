@@ -22,6 +22,7 @@ if (isset($_GET['logout'])) {
     <title>AUTOMATIC WAREHOUSE</title>
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@ if (isset($_GET['logout'])) {
                 <form action="checkin_save.php" method="post">
                     <div>
                         <button class="cancle-btn" type="button">Cancle</button>
-                        <button class="btn2" type="submit">
+                        <button class="btn2" id = "checkin-check" type="submit">
                             Check in
                         </button>
                     </div>
