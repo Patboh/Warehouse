@@ -158,13 +158,19 @@ ALTER TABLE `user`
 -- Constraints for table `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`productColor_ID`) REFERENCES `color` (`id`);
+  ADD CONSTRAINT `productColor_ID_fk` FOREIGN KEY (`productColor_ID`) REFERENCES `color` (`id`);
+
+--
+-- Constraints for table `sensor`
+--
+ALTER TABLE `sensor`
+  ADD CONSTRAINT `sensorColor_ID_fk` FOREIGN KEY (`colorID`) REFERENCES `color` (`id`);
 
 --
 -- Constraints for table `storage`
 --
 ALTER TABLE `storage`
-  ADD CONSTRAINT `storage_ibfk_1` FOREIGN KEY (`storageColor_ID`) REFERENCES `color` (`id`);
+  ADD CONSTRAINT `storageColor_ID_fk` FOREIGN KEY (`storageColor_ID`) REFERENCES `color` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
