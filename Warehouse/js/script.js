@@ -17,3 +17,9 @@ showPopup.onclick = () => {
 closeBtn.onclick = () => {
     popupContainer.classList.remove('active');
 }
+$(document).ready(function () {
+    $("#checkin-check").click(function () {
+        $("form").submit();
+        alert("Check in successfully")
+    });
+});
